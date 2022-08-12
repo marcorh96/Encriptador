@@ -81,7 +81,7 @@ function createDivSection() {
     targetDiv.innerHTML += '<div id="remove 2">';
     targetDiv.innerHTML += '<div>';
     targetDiv.innerHTML += '<div>';
-    targetDiv.innerHTML += '<textarea type="text"  class = "textareaShow" id="showText"> </textarea>';
+    targetDiv.innerHTML += '<textarea type="text"  class = "textareaShow" id="showText" readonly> </textarea>';
     targetDiv.innerHTML += '</div>';
     targetDiv.innerHTML += '<div>';
     targetDiv.innerHTML += '<button id="btnCopyText" class="btnCopyText"> <span class="txtCopy">Copiar</span></button>';
