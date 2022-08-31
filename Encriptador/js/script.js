@@ -81,7 +81,7 @@ function createDivSection() {
     targetDiv.innerHTML += '<div id="remove 2">';
     targetDiv.innerHTML += '<div>';
     targetDiv.innerHTML += '<div>';
-    targetDiv.innerHTML += '<textarea type="text"  class = "textareaShow" id="showText" readonly> </textarea>';
+    targetDiv.innerHTML += '<textarea type="text"  class = "textareaShow" id="showText" readonly disabled="true"> </textarea>';
     targetDiv.innerHTML += '</div>';
     targetDiv.innerHTML += '<div>';
     targetDiv.innerHTML += '<button id="btnCopyText" class="btnCopyText"> <span class="txtCopy">Copiar</span></button>';
@@ -97,7 +97,7 @@ function createVariables() {
 }
 function fnCopy() {
     textareaInput2.select()
-    document.execCommand("copy");
+    navigator.clipboard.writeText(textareaInput2.value);
     alert("Su elemento ha sido copiado al portapapeles.");
 } 
 
